@@ -28,3 +28,14 @@ jobs:
 
     - name: Test with Maven
       run: mvn test --file pom.xml
+
+    - name: Package with Maven
+      run: mvn package --file pom.xml
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: Jar 
+        # Directory containing files to upload
+        path: target/*.jar
