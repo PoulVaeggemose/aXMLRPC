@@ -40,6 +40,7 @@ public class Call {
 	 * http://www.xmlrpc.com/spec. If flags have been set in the XMLRPCClient
 	 * the returning xml does not comply strict to the standard.
 	 *
+	 * @param debugMode true for extra debug
 	 * @return The string of the xml representing this call.
 	 * @throws XMLRPCException Will be thrown whenever the xml representation cannot
 	 * 		be build without errors.
