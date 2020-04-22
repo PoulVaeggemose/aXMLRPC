@@ -21,4 +21,9 @@ public class TestBase64 {
 		assertEquals("Ma", Base64.decodeAsString("TWE="));
 		assertEquals("M", Base64.decodeAsString("TQ=="));
 	}
+
+	@Test
+	public void testThatFails() {
+		fail();
+	}
 }
